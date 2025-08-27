@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+:root {
+    --vermelho-escuro: #840000;
+    --alto-contraste-fundo: #000000;
+    --alto-constraste-texto: white;
+    --alto-constraste-link: rgb(255, 255, 255);
+    --alto-constraste-header: #ff2a2a;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+
+.inicio h1 {
+    font-family: "New Rocker", system-ui;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: #f32d2d;
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('img/background.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* posicionamento para a imagem à direita */
+.img-inicio {
+    position: absolute;
+    top: 18rem;
+    right: 15%;
+    width: 23rem;
+    height: auto;
+}
+
+.img-inicio2 {
+    position: absolute;
+    top: 55.8%;
+    right: 27.5%;
+    width: 23rem;
+    height: auto;
+}
+
+.logo2 {
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+}
+
+.logo-skate {
+    position: absolute;
+    right: 79%;
+    width: 18rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--vermelho-escuro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    /* Convertido para em aumenta o tamanho da fonte por tabela*/
+    height: 3em;
+    /* Convertido para em */
+    align-content: center;
+
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--vermelho-escuro);
+}
+
+
+#cbjr {
+    font-size: 1.4em;
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url(img/jornal.png),
+        url(img/jornal2.png);
+    background-position: 5% -40%, bottom right;
+    background-repeat: no-repeat;
+    background-size: 320px 320px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+#cbjr .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
+}
+
+
+h2 {
+    font-family: "New Rocker", system-ui;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--vermelho-escuro);
+}
+
+#galeria {
+    background-color: #FAF4F4;
+}
+
+#galeria>h2 {
+    font-size: 4em;
+}
+
+.fundo-galeria {
+    background-size: 180px 120px;
+}
+
+#contato {
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #ff2929;
+    border: none;
+    font-weight: bold;
+}
+
+/* chama classe do bootstrap para modificar a cor */
+.form-control {
+    background-color: #F1EDEF;
+}
+
+.menu-ac {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-ac {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-ac button {
+    margin-bottom: 2px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+/* Contraste */
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-constraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-constraste-texto);
+}
+
+.alto-contraste .nav-link {
+    color: var(--alto-constraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulatio button,
+.alto-contraste .btn-danger {
+    background-color: var(--alto-constraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste #cbjr, #galeria {
+    background: none;
+}
